@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Album</title>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../css/album.css">
 </head>
+
 <body>
+
+   <header>
+      <nav class="container">
+         <div class="logo">
+            <a href="../index.html">
+               <img class="logo-img" src="../images/logo.png" alt="">
+            </a>
+         </div>
+         <div class="nav-link">
+            <a class="nav-links" href="../index.html">Users</a>
+            <a class="nav-links" href="../pages/post.html">Posts</a>
+            <a class="nav-links" href="../pages/album.html">Photos <span class="active"></span></a>
+            <a class="nav-links" href="../pages/todo.html">ToDos</a>
+         </div>
+      </nav>
+   </header>
    
+   <div class="container user-album-row">
+   </div>
+
+   <div class="reklama">
+      <div class="reklama-bro">
+         <img class="bro-img" src="../images/photo_2023-08-07_12-24-16.jpg" alt="">
+         <h2 class="bro-text">MilliyBro</h2>
+      </div>
+      <h3 class="reklama-telegram">
+         <img class="reklama-img" src="../images/telegram.png" alt="">
+         t.me/MilliyBro
+      </h3>
+      <h3 class="reklama-insta">
+         <img class="reklama-img" src="../images/instagram.png" alt="">
+         instagram.com/MilliyBro
+      </h3>
+      <h3 class="reklama-tik">
+         <img class="reklama-img" src="../images/tik-tok.png" alt="">
+         tiktok.com/MilliyBro
+      </h3>
+      <a href="https://t.me/milliybro">
+         <button class="obuna">
+            Obuna bo'ling
+         </button>
+      </a>
+      <button onclick="reklamaClose()" class="reklama-close">
+         x
+      </button>
+   </div>
+
+   <script src="../js/get-data.js"></script>
+   <script src="../js/main.js"></script>
+   <script src="../js/album.js"></script>
 </body>
+
 </html>

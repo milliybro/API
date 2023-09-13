@@ -1,7 +1,9 @@
 const usersRow = document.querySelector(".users-row");
 const reklama = document.querySelector(".reklama");
 
-usersRow.innerHTML = "<div>Loading...</div>";
+usersRow.innerHTML = `<div class="loader loadingio-spinner-magnify-3l5v4i2w3az"><div class="ldio-djvbccvlp2d">
+<div><div><div></div><div></div></div></div>
+</div></div>`;
 
 getData("https://jsonplaceholder.typicode.com/users", (res, status) => {
   usersRow.innerHTML = "";
